@@ -8,7 +8,7 @@ int plugin_is_GPL_compatible;
 
 /* New emacs lisp function -- all functions exposed to emacs have this prototype */
 static emacs_value
-Fsuffix_tree(emacs_env *env, int nargs, emacs_value args[], void *data) {
+Fsuffix_tree(emacs_env *env, long nargs, emacs_value args[], void *data) {
     return env->make_integer(env, 42);
 }
 
